@@ -12,22 +12,22 @@ go get -u google.golang.org/grpc
 go get -u github.com/golang/protobuf/protoc-gen-go
 ```
 
-## 生成
+### 生成
 ```
 protoc server/proto/user.proto --go_out=plugins=grpc:.
 ```
 
-## サーバーの起動
+### サーバーの起動
 ```
 go run server/server.go 
 ```
 
-## クライアントの実行
+### クライアントの実行
 ```
 go run client/client.go
 ```
 
-## ディレクトリ構成
+### ディレクトリ構成
 ```
 ├── client
 │   └── client.go
