@@ -1,18 +1,19 @@
-# GRPCのCRUDデモ
+# gRPCのCRUDサンプル
 
-## 環境設定
-### Protobufのインストール
+## 環境構築
+### Homebrew経由でProtocをインストール
 ```
 brew install protobuf 
 ```
 
 ### ライブラリのインストール
 ```
-go get -u google.golang.org/grpc
-go get -u github.com/golang/protobuf/protoc-gen-go
+go get google.golang.org/grpc
+go get github.com/golang/protobuf/protoc-gen-go
+go get go.mongodb.org/mongo-driver/mongo
 ```
 
-### 生成
+### .protoファイルからコードを生成
 ```
 protoc server/proto/user.proto --go_out=plugins=grpc:.
 ```
