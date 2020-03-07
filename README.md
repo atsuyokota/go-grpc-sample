@@ -35,17 +35,17 @@ go run client/client.go
 ├── proto
 │   ├── user.pb.go
 │   └── user.proto
-├── server
-│   ├── config
-│   │   └── config.go
-│   ├── config.ini
-│   ├── logs
-│   │   └── server.log
-│   ├── model
-│   │   └── userItem.go
-│   ├── repository
-│   │   └── userRepository.go
-│   ├── server.go
-│   └── utils
-│       └── logging.go
+└── server
+    ├── config
+    │   └── config.go
+    ├── config.ini
+    ├── logs
+    │   └── server.log
+    ├── model
+    │   └── userItem.go
+    ├── repository
+    │   └── userRepository.go
+    ├── server.go
+    └── utils
+        └── logging.go
 ```
